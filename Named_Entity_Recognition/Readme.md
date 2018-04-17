@@ -21,22 +21,26 @@ the rest.
   1] The simple HMM bigram model  
      1) For unknown words considering the maximum value in viterbi implementation  
 
- |      |Precision| Recall| F1|
+||Precision|Recall|F1|
+|---|:---:|:---:|---:|       
 |Values| 0.52857 |0.37373| 0.4378698|
 
   2] For the given fact that for sequence labelling, Named Entity Recognition, The relation among
 the words is the most important factor, and since HMM model is based on independence of the
 words, the system was modified to Trigram model  
 
-     **For trigram model:**
-|      |Precision |Recall |F1|
-|Values |0.464646| 0.464646| 0.464646|
+**For trigram model:**  
+
+||Precision|Recall|F1|
+|---|:---:|:---:|---:|
+|Values|0.464646| 0.464646| 0.464646|
 
   3] Since features are the most important factors and the context of the word in the given
 sentence is very important for this problem, word embeddings was considered instead of the
 calculation count.  
 
-|       |Precision| Recall| F1|
+||Precision| Recall| F1|
+|---|:---:|:---:|---:|
 |Values |0.5588 |0.4360515| 0.4898746|
 
 **What HMM failed to recognize?**  
