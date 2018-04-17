@@ -43,7 +43,7 @@ the place or name of the person, So, the unknown words are given the probability
 the tag which had the highest probability value in training data [which in most cases is
 noun]  
 
-**Output and Results:**
+**Output and Results:**  
 The accuracy for the 90:10 training vs. dev split up observed was 94.97% compared to the
 88% of the baseline model. I believe this difference is due to the fact that a word can act as
 noun and verb as well but in the baseline, if I happen to see that word, I blindly assign it the
