@@ -10,11 +10,11 @@ order to classify the data.
 Looking into the training set for deceptive and truthful data gave many insights about the kind
 of language, context that is used in both. These were certain features/sentiments observed in
 the data which is incorporated in the program:  
-  1] The truthful reviews tend to use more nouns than the deceptive ones.  
-  2] The use of verb, adverbs and adjectives was seen more in the deceptive reviews.  
-  3] Also, one thing observed was the fact that truthful reviews had comparatively more usage of
+  1. The truthful reviews tend to use more nouns than the deceptive ones.  
+  2. The use of verb, adverbs and adjectives was seen more in the deceptive reviews.  
+  3. Also, one thing observed was the fact that truthful reviews had comparatively more usage of
 the punctuation marks than in the deceptive ones.  
-  4] The truthful reviews had more of hotel related words describing the place where they stayed
+  4. The truthful reviews had more of hotel related words describing the place where they stayed
 like: adjoining rooms, amenities, baggage, breakfast, check in, check out, reservation etc.
 These four set of features were added to the naive bayes implementation.  
 
@@ -38,19 +38,19 @@ marks is checked for every sentence and the probability of these is also multipl
 
 **Results and Discussion:**  
 
-  1] The training data was divided into training-dev in the ratio 80:20. The system accuracy
+  1. The training data was divided into training-dev in the ratio 80:20. The system accuracy
 observed was in the range of 50% to 60% for different training-dev sets.  
 
 **Improvements that can be incorporated in the system:**  
 
-  1] The fact that deceptive reviews tend to have more of strong emotional content rather than
+  1. The fact that deceptive reviews tend to have more of strong emotional content rather than
 just talking about the experience. Phrases like ‘extremely disappointed’ , ‘extremely
 comfortable’ are seen more in the deceptive reviews. This was not considered.  
-  2] The system was developed only on the unigrams. Considering bi-grams and tri-grams to
+  2. The system was developed only on the unigrams. Considering bi-grams and tri-grams to
 check for certain phrases would have helped.  
 
 **References:**  
 
-  1] Speech and Language Processing (3rd ed. Draft) Dan Jurafsky and James H. Martin
+  1. Speech and Language Processing (3rd ed. Draft) Dan Jurafsky and James H. Martin
 https://web.stanford.edu/~jurafsky/slp3/ [Text Classification]  
-  2] Jiwei Li et al. Towards a General Rule for Identifying Deceptive Opinion Spam  
+  2. Jiwei Li et al. Towards a General Rule for Identifying Deceptive Opinion Spam  
