@@ -15,40 +15,22 @@ check the each word’s probability of belonging to a particular class and thus 
 inclination of the sentence to a particular class.
 
 **Implementation:**  
-  1] Firstly, the system was designed without taking out the stop words and also without any
-pre-processing of the data. It was obvious that systems accuracy will be less, given that the
-upper case and lower case characters will be identified distinctly even if the words are same.
-And also, the words ending with punctuation and the same words without any punctuation
+1. Firstly, the system was designed without taking out the stop words and also without any pre-processing of the data. It was obvious that systems accuracy will be less, given that the upper case and lower case characters will be identified distinctly even if the words are same. And also, the words ending with punctuation and the same words without any punctuation
 would also behave in the similar fashion.  
-  2] The system was modified with data pre-processing steps included. And a very good
-accuracy rate was observed.  
-  3] The system was then tested with respect to the stop words if they would make any
-difference to the accuracy. But as expected the accuracy after removing the stop words and
-before removing the stop words didn’t bring much change to the system’s accuracy.  
-  4] The basic model of Naïve Bayes for Sentiment Analysis is implemented here. No
-additional libraries are used. For the training data, it is pre-processed and the probability of
-each word occurring in respective class is calculated and if the word doesn’t belong to a
+2. The system was modified with data pre-processing steps included. And a very good accuracy rate was observed.  
+3. The system was then tested with respect to the stop words if they would make any difference to the accuracy. But as expected the accuracy after removing the stop words and before removing the stop words didn’t bring much change to the system’s accuracy.  
+4. The basic model of Naïve Bayes for Sentiment Analysis is implemented here. No additional libraries are used. For the training data, it is pre-processed and the probability of each word occurring in respective class is calculated and if the word doesn’t belong to a
 particular class, then Laplace smoothing is applied to handle such situation.  
-  5] For the test data, the probability of each word in the sentence belonging to a particular
-class is checked from the training and is multiplied with the prior probability of the class in
-the dataset. Thus the sentiment if the review is either positive or negative is obtained.  
+5. For the test data, the probability of each word in the sentence belonging to a particular class is checked from the training and is multiplied with the prior probability of the class in the dataset. Thus the sentiment if the review is either positive or negative is obtained.  
 
 **Results and discussion:**  
-In the initial phase, the training was divided 90-10. It was trained on 90% of data and tested
-on the rest, the accuracy observed was 90%. This is due to the total independence of the
-words from each other. On the test set, the system's accuracy observed was 88%
+In the initial phase, the training was divided 90-10. It was trained on 90% of data and tested on the rest, the accuracy observed was 90%. This is due to the total independence of the words from each other. On the test set, the system's accuracy observed was 88%
 
 **Improvements:**  
 The following are few improvements that can be made to the system:  
-  1] Lemmatization is essential in this aspect, given the fact that it is common to observe words
-like – like, liked, liking, likings etc. and without lemmatization, these words end up being
-counted separately when in fact the meaning seems to be the same. Thus, lemmatization is
-one aspect that needs to be considered.  
-  2] In the system, the new words that are seen in test data are completely ignored. We consider
-only the words that are present in the training set and the output is generated only based on
-the training data that we have. But, in some situations we see that these left out words, do
-contribute considerably to the output.  
+1. Lemmatization is essential in this aspect, given the fact that it is common to observe words like – like, liked, liking, likings etc. and without lemmatization, these words end up being counted separately when in fact the meaning seems to be the same. Thus, lemmatization is one aspect that needs to be considered.  
+2. In the system, the new words that are seen in test data are completely ignored. We consider only the words that are present in the training set and the output is generated only based on the training data that we have. But, in some situations we see that these left out words, do contribute considerably to the output.  
 
 **Reference:**  
-  1] Speech and Language Processing (3rd ed. Draft) Dan Jurafsky and James H. Martin
-https://web.stanford.edu/~jurafsky/slp3/  
+1. [Speech and Language Processing (3rd ed. Draft) Dan Jurafsky and James H. Martin]
+(https://web.stanford.edu/~jurafsky/slp3/)
