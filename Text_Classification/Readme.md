@@ -11,7 +11,7 @@ The system was trained on the training set given but during the training phase, 
 provided was divided as training and dev in 90-10 ratio and the system was trained based on
 this. The system is expected to calculate the respective word probability of belonging to a
 particular class such that when it is fed with the test data, for each sentence it is expected to
-check the each word’s probability of belonging to a particular class and thus we get the total
+check each word’s probability of belonging to a particular class and thus we get the total
 inclination of the sentence to a particular class.
 
 **Implementation:**  
